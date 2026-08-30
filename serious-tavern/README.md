@@ -48,7 +48,10 @@ The preset keeps eight recent assistant turns verbatim, summarizes three at a
 time, retains the raw chat, disables SillyTavern's stock Summary and Chat
 Vectorization, and labels injected memory as fallible. It also tells the
 summarizer that square-bracketed OOC control and trailing `{story gravity}` are
-instructions rather than fictional events.
+instructions rather than fictional events. Serenity's 512-token summarizer
+ceiling was chosen from a local continuity replay: 256 tokens cut a valid delta
+mid-clause, while 512 completed naturally. This is a ceiling, not a request for
+longer prose; the one-line, 16-clause delta contract remains the size control.
 
 Notebook is intentionally human-only and is not injected. A note becomes model
 context only when the player deliberately moves its content into an accepted

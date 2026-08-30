@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "revision": "roleplay-memory-v1",
+  "revision": "roleplay-memory-v2",
   "disableBuiltIns": [
     "memory",
     "vectors"
@@ -45,6 +45,6 @@
     "debugMode": false,
     "traceMode": false,
     "connectionSource": "default",
-    "summarizerResponseLength": 256
+    "summarizerResponseLength": 512
   }
 }

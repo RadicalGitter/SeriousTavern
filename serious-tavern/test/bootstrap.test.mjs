@@ -29,6 +29,8 @@ test("the curated extension pack is fully pinned", () => {
 
 test("roleplay settings preserve unrelated settings and secrets", () => {
   const preset = readJson("roleplay-settings.json");
+  assert.equal(preset.revision, "roleplay-memory-v2");
+  assert.equal(preset.summaryception.summarizerResponseLength, 512);
   const original = {
     main_api: "openai",
     extension_settings: {
