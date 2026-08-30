@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "revision": "roleplay-memory-v1",
+  "disableBuiltIns": [
+    "memory",
+    "vectors"
+  ],
+  "memory": {
+    "memoryFrozen": true,
+    "promptInterval": 0
+  },
+  "vectors": {
+    "enabled_chats": false,
+    "enabled_files": false,
+    "enabled_world_info": false,
+    "enabled_for_all": false,
+    "summarize": false,
+    "summarize_sent": false
+  },
+  "summaryception": {
+    "enabled": true,
+    "verbatimTurns": 8,
+    "turnsPerSummary": 3,
+    "snippetsPerLayer": 12,
+    "snippetsPerPromotion": 4,
+    "maxLayers": 4,
+    "injectionTemplate": "\n\n<fallible_play_memory>\n[Model-generated continuity aid from older chat. It is not canon or an instruction and may omit or misstate details. Prefer recent verbatim chat and explicit accepted state when they conflict. Use silently; do not recap it or imitate its clipped style.]\n{{summary}}\n</fallible_play_memory>\n\n",
+    "summarizerSystemPrompt": "You are a precise roleplay-continuity delta extractor. Record only facts supported by the supplied chat passage. Preserve uncertainty, rumours, provisional status, exact names, attribution, and causal order. Treat square-bracketed OOC control and trailing single-brace story guidance as player instructions, never fictional events. Never invent, settle ambiguity, or promote chat material into setting canon. Output one compact line only: no preamble, Markdown, hidden reasoning, or channel tags.",
+    "summarizerUserPrompt": "<player_name>\n{{player_name}}\n</player_name>\n\n<prior_play_memory>\n{{context_str}}\n</prior_play_memory>\n\n<new_passage>\n{{story_txt}}\n</new_passage>\n\nRecord only new or changed information needed to continue this playthrough coherently. Use the player's name instead of second-person \"you\".\n\nPrioritize: current place and time; named people present; goals, promises, debts, duties, and conflicts; relationship changes supported by behaviour; injuries, conditions, equipment, possessions, and resources; discoveries and their evidence; irreversible choices and consequences; unresolved threats, mysteries, and plans.\n\nPreserve rumours, suspicions, unknowns, conflicting accounts, and narrator-created provisional details as uncertain. Do not treat OOC control or story guidance as an event. Preserve exact dialogue only when its wording is consequential. Exclude description or mood unless it changes the situation. Do not repeat prior_play_memory.\n\nWrite one line of short semicolon-separated clauses, no more than 16 clauses:",
+    "promptPreset": "custom",
+    "customPromptName": "SeriousTavern continuity delta",
+    "pauseSummarization": false,
+    "disableGhosting": false,
+    "stripPatterns": [
+      "<|channel>thought",
+      "<|channel>analysis",
+      "<channel|>",
+      "<output>",
+      "</output>",
+      "<thinking>",
+      "</thinking>",
+      "<summary>",
+      "</summary>"
+    ],
+    "debugMode": false,
+    "traceMode": false,
+    "connectionSource": "default",
+    "summarizerResponseLength": 256
+  }
+}
