@@ -1,13 +1,14 @@
 {
   "schemaVersion": 1,
-  "lockRevision": "2026-08-30.1",
+  "lockRevision": "2026-08-30.2",
   "packs": {
     "roleplay-v1": [
       "summaryception",
       "prompt-inspector",
       "world-info-info",
       "notebook",
-      "timelines"
+      "timelines",
+      "input-history"
     ]
   },
   "extensions": {
@@ -46,6 +47,14 @@
       "commit": "03f74342c86d2edaa5a1751b34f0c7113813db7d",
       "channel": "audited",
       "purpose": "Searchable chat and branch navigation without adding model context."
+    },
+    "input-history": {
+      "directory": "SillyTavern-InputHistory",
+      "repository": "https://github.com/LenAnderson/SillyTavern-InputHistory.git",
+      "commit": "1ba5491dbe4287f77c12a2114c9a5ddf26a7fbe8",
+      "channel": "audited",
+      "purpose": "Recalls recent player inputs and slash commands for the MUD-style command loop without adding model context.",
+      "reviewNote": "No network or model calls. Persists the most recent inputs in browser localStorage under st--inputHistory, scoped by the profile's browser origin."
     }
   }
 }

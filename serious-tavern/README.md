@@ -22,6 +22,7 @@ trees remain ignored user data.
 | WorldInfo Info | Reports activated World Info entries | Observational |
 | Notebook | Stores human-authored rich-text notes | None automatically |
 | Timelines | Searches and navigates chat branches | None |
+| Input History | Recalls recent player inputs and slash commands | None |
 
 Summaryception is deliberately held at commit `c67626a`. The current upstream
 head changes the injected role/depth and contains an unqualified error path in
@@ -54,7 +55,17 @@ context only when the player deliberately moves its content into an accepted
 state or lore entry. WorldInfo Info and Prompt Inspector diagnose retrieval;
 they do not decide truth.
 
+Input History is the command-line convenience layer for the MUD-style input
+loop. It stores the ten most recent submitted inputs in browser `localStorage`
+under `st--inputHistory`, so commands survive reloads but may contain private
+text. SeriousTavern profiles use distinct browser origins, keeping those
+histories profile-local. Clear site data to remove the history.
+
 ## Alternatives held out of the default
+
+The dated evidence and admission status for the broader extension survey lives
+in [`extension-admission.md`](extension-admission.md). The lock file remains the
+sole implementation truth for what a pack installs.
 
 - Memory Books is the strongest experimental alternative for scene-bounded,
   editable lorebook memories. It is mutually exclusive with Summaryception in

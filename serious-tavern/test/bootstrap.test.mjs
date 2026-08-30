@@ -22,7 +22,8 @@ test("the curated extension pack is fully pinned", () => {
     "prompt-inspector",
     "world-info-info",
     "notebook",
-    "timelines"
+    "timelines",
+    "input-history"
   ]);
 });
 
