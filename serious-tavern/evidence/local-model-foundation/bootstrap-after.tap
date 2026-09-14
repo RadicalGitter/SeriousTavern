@@ -1,0 +1,20 @@
+
+> sillytavern@1.18.0 test:serious
+> node --test serious-tavern/test/*.test.mjs
+
+✔ the curated extension pack is fully pinned (1.2044ms)
+✔ roleplay settings preserve unrelated settings and secrets (0.586ms)
+✔ config patch disables both automatic update paths without flattening the file (0.4196ms)
+✔ broad data roots are rejected (0.5875ms)
+✔ roleplay preparation disables reasoning reinsertion without erasing stored or display preferences (0.3163ms)
+✔ native preset is discoverable and retains the platform's card, lore and history markers (0.8898ms)
+✔ the real prompt reasoning inserter omits historical thoughts under prepared settings (1.2901ms)
+✔ the native budget reserves generation space within the provisional context (0.8908ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 67.0837

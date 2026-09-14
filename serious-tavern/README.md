@@ -4,8 +4,30 @@ Status: implemented operations and reference contract for the personal fork.
 
 Authority: SillyTavern owns platform behaviour; setting packs own accepted
 setting facts; each raw chat owns its transcript; explicit Semantic Play state
-owns curated play state. This directory owns only the reproducible extension
-bundle and its safe profile defaults.
+owns curated play state. This directory owns the reproducible extension
+bundle, roleplay defaults and offline local-model request contracts.
+
+The owner-selected operating model is one self-contained instance per world,
+with local dependencies and data. The profile bootstrap below remains a legacy
+explicit interface; it is not a request to migrate existing worlds.
+
+## Local-model development preset
+
+`SeriousTavern - Serenity llama.cpp` is a native Chat Completion preset for the
+provisional Qwen3.8-27B-Serenity alias at localhost:7332/v1. It reserves 8,192
+generation tokens within 128,000 context, retains native card/lore/history
+markers, and leaves message roles unchanged. Custom body parameters request
+thinking with `preserve_thinking: false` and the inspected launcher samplers.
+These are compatibility defaults, not proven literary tuning.
+
+Roleplay settings v3 disable historical reasoning reinsertion into prompts,
+preserving other reasoning preferences and saved chat data. Previously managed
+settings report drift instead of being silently overwritten. The preset is
+available for explicit selection; this development work selected no connection,
+created no world instance, and changed no external launcher.
+
+See [development evidence and remaining work](development.md) for the actual
+transport checks and their browser/model limitations.
 
 SeriousTavern is an upstream-compatible SillyTavern fork, not a bundle of
 vendored extension code. The bootstrap clones reviewed extensions into an
@@ -61,8 +83,9 @@ they do not decide truth.
 Input History is the command-line convenience layer for the MUD-style input
 loop. It stores the ten most recent submitted inputs in browser `localStorage`
 under `st--inputHistory`, so commands survive reloads but may contain private
-text. SeriousTavern profiles use distinct browser origins, keeping those
-histories profile-local. Clear site data to remove the history.
+text. Separate instance directories alone do not isolate browser localStorage:
+instances using the same origin share this key. Per-world isolation of that
+extension remains a backlog item. Clear site data to remove the history.
 
 ## Alternatives held out of the default
 
@@ -114,4 +137,10 @@ change.
 
 Run the offline contract checks with:
 
-    node --test serious-tavern/test/bootstrap.test.mjs
+    npm run test:serious
+
+Request checks additionally need the local `tests/` dependencies. Install with
+`npm ci --ignore-scripts --no-audit --no-fund` in this checkout and in `tests/`,
+then run `npm run test:serious:requests`. The generated SemanticPlay integration
+case is explicitly skipped unless `SERIOUS_SEMANTIC_BUNDLE` names a portable
+bundle; the recorded development run supplied it and ran every case.

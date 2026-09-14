@@ -1,6 +1,9 @@
 {
   "schemaVersion": 1,
-  "revision": "roleplay-memory-v2",
+  "revision": "roleplay-memory-v3",
+  "reasoning": {
+    "add_to_prompts": false
+  },
   "disableBuiltIns": [
     "memory",
     "vectors"

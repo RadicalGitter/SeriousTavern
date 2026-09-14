@@ -1,0 +1,60 @@
+TAP version 13
+# Subtest: the curated extension pack is fully pinned
+ok 1 - the curated extension pack is fully pinned
+  ---
+  duration_ms: 1.1654
+  type: 'test'
+  ...
+# Subtest: roleplay settings preserve unrelated settings and secrets
+ok 2 - roleplay settings preserve unrelated settings and secrets
+  ---
+  duration_ms: 0.5267
+  type: 'test'
+  ...
+# Subtest: config patch disables both automatic update paths without flattening the file
+ok 3 - config patch disables both automatic update paths without flattening the file
+  ---
+  duration_ms: 0.5146
+  type: 'test'
+  ...
+# Subtest: broad data roots are rejected
+ok 4 - broad data roots are rejected
+  ---
+  duration_ms: 1.1925
+  type: 'test'
+  ...
+# Subtest: roleplay preparation disables reasoning reinsertion without erasing stored or display preferences
+not ok 5 - roleplay preparation disables reasoning reinsertion without erasing stored or display preferences
+  ---
+  duration_ms: 1.0022
+  type: 'test'
+  location: 'Z:\\Programmering\\Projects\\Roleplay\\SeriousTavern\\serious-tavern\\test\\bootstrap.test.mjs:69:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    true !== false
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: false
+  actual: true
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///Z:/Programmering/Projects/Roleplay/SeriousTavern/serious-tavern/test/bootstrap.test.mjs:73:10)
+    Test.runInAsyncScope (node:async_hooks:212:14)
+    Test.run (node:internal/test_runner/test:1109:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:786:18)
+    Test.postRun (node:internal/test_runner/test:1238:19)
+    Test.run (node:internal/test_runner/test:1166:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:786:7)
+  ...
+1..5
+# tests 5
+# suites 0
+# pass 4
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 82.8432

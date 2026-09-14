@@ -1,0 +1,26 @@
+
+Z:\Programmering\Projects\Roleplay\SeriousTavern\serious-tavern\bootstrap-core.mjs
+  1:1  error  Parsing error: 'import' and 'export' may appear only with 'sourceType: module'
+
+Z:\Programmering\Projects\Roleplay\SeriousTavern\tests\serious-request.test.js
+   48:145  error  Missing trailing comma                 comma-dangle
+  152:9    error  Expect must be inside of a test block  playwright/no-standalone-expect
+  152:9    error  Expect must be inside of a test block  jest/no-standalone-expect
+  153:9    error  Expect must be inside of a test block  playwright/no-standalone-expect
+  153:9    error  Expect must be inside of a test block  jest/no-standalone-expect
+  154:9    error  Expect must be inside of a test block  playwright/no-standalone-expect
+  154:9    error  Expect must be inside of a test block  jest/no-standalone-expect
+  155:9    error  Expect must be inside of a test block  playwright/no-standalone-expect
+  155:9    error  Expect must be inside of a test block  jest/no-standalone-expect
+  156:9    error  Expect must be inside of a test block  playwright/no-standalone-expect
+  156:9    error  Expect must be inside of a test block  jest/no-standalone-expect
+  158:9    error  Expect must be inside of a test block  playwright/no-standalone-expect
+  158:9    error  Expect must be inside of a test block  jest/no-standalone-expect
+  159:9    error  Expect must be inside of a test block  playwright/no-standalone-expect
+  159:9    error  Expect must be inside of a test block  jest/no-standalone-expect
+  161:9    error  Expect must be inside of a test block  playwright/no-standalone-expect
+  161:9    error  Expect must be inside of a test block  jest/no-standalone-expect
+
+✖ 18 problems (18 errors, 0 warnings)
+  1 error and 0 warnings potentially fixable with the `--fix` option.
+

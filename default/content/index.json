@@ -288,6 +288,10 @@
         "type": "openai_preset"
     },
     {
+        "filename": "presets/openai/SeriousTavern - Serenity llama.cpp.json",
+        "type": "openai_preset"
+    },
+    {
         "filename": "presets/context/Adventure.json",
         "type": "context"
     },

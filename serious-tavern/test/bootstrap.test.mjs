@@ -29,7 +29,7 @@ test("the curated extension pack is fully pinned", () => {
 
 test("roleplay settings preserve unrelated settings and secrets", () => {
   const preset = readJson("roleplay-settings.json");
-  assert.equal(preset.revision, "roleplay-memory-v2");
+  assert.equal(preset.revision, "roleplay-memory-v3");
   assert.equal(preset.summaryception.summarizerResponseLength, 512);
   const original = {
     main_api: "openai",
@@ -64,4 +64,18 @@ test("broad data roots are rejected", () => {
   assert.throws(() => assertSafeDataRoot(""));
   assert.throws(() => assertSafeDataRoot(path.parse(process.cwd()).root));
   assert.equal(assertSafeDataRoot(path.join(process.cwd(), "profile-data")), path.resolve("profile-data"));
+});
+
+test("roleplay preparation disables reasoning reinsertion without erasing stored or display preferences", () => {
+  const preset = readJson("roleplay-settings.json");
+  const current = { power_user: { unrelated: "keep", reasoning: { add_to_prompts: true, auto_expand: true, prefix: "<think>" } } };
+  const merged = mergeRoleplaySettings(current, preset);
+  assert.equal(merged.power_user.reasoning.add_to_prompts, false);
+  assert.equal(merged.power_user.reasoning.auto_expand, true);
+  assert.equal(merged.power_user.reasoning.prefix, "<think>");
+  assert.equal(merged.power_user.unrelated, "keep");
+  assert.equal(current.power_user.reasoning.add_to_prompts, true);
+  assert.equal(settingsMatchPreset(merged, preset), true);
+  merged.power_user.reasoning.add_to_prompts = true;
+  assert.equal(settingsMatchPreset(merged, preset), false);
 });

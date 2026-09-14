@@ -1,0 +1,9 @@
+
+Z:\Programmering\Projects\Roleplay\SeriousTavern\tests\serious-request.test.js
+  164:9   warning  Disabled test                               jest/no-disabled-tests
+  164:9   warning  Test has no assertions                      playwright/expect-expect
+  164:9   warning  Test has no assertions                      jest/expect-expect
+  164:14  warning  Unexpected use of the `.skip()` annotation  playwright/no-skipped-test
+
+✖ 4 problems (0 errors, 4 warnings)
+

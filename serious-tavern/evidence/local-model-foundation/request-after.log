@@ -1,0 +1,215 @@
+  console.debug
+    Chat Completion request: {
+      messages: [
+        { role: 'system', content: 'World authority.' },
+        { role: 'user', content: 'I look at the door.' }
+      ],
+      prompt: undefined,
+      model: 'Qwen3.8-27B-Serenity',
+      temperature: 1,
+      max_tokens: 8192,
+      max_completion_tokens: undefined,
+      stream: false,
+      presence_penalty: 0,
+      frequency_penalty: 0,
+      top_p: 0.95,
+      top_k: 20,
+      stop: undefined,
+      logit_bias: undefined,
+      seed: undefined,
+      n: undefined,
+      logprobs: undefined,
+      top_logprobs: undefined,
+      chat_template_kwargs: { enable_thinking: true, preserve_thinking: false },
+      min_p: 0,
+      repeat_penalty: 1
+    }
+
+      at ../src/endpoints/backends/chat-completions.js:2588:17
+
+  console.debug
+    Chat Completion response: { choices: [ { message: [Object] } ] }
+
+      at ../src/endpoints/backends/chat-completions.js:2600:21
+
+  console.debug
+    Chat Completion request: {
+      messages: [
+        { role: 'system', content: 'Card contract.' },
+        { role: 'user', content: 'I wait.' },
+        { role: 'assistant', content: 'The room stays quiet.' },
+        { role: 'system', content: 'Accepted scene state.' },
+        {
+          role: 'user',
+          content: 'I look at the window.\n' +
+            '<semantic-play-control>hold</semantic-play-control>'
+        }
+      ],
+      prompt: undefined,
+      model: 'Qwen3.8-27B-Serenity',
+      temperature: 1,
+      max_tokens: 8192,
+      max_completion_tokens: undefined,
+      stream: false,
+      presence_penalty: 0,
+      frequency_penalty: 0,
+      top_p: 0.95,
+      top_k: 20,
+      stop: undefined,
+      logit_bias: undefined,
+      seed: undefined,
+      n: undefined,
+      logprobs: undefined,
+      top_logprobs: undefined,
+      chat_template_kwargs: { enable_thinking: true, preserve_thinking: false },
+      min_p: 0,
+      repeat_penalty: 1
+    }
+
+      at ../src/endpoints/backends/chat-completions.js:2588:17
+
+  console.debug
+    Chat Completion response: { choices: [ { message: [Object] } ] }
+
+      at ../src/endpoints/backends/chat-completions.js:2600:21
+
+  console.debug
+    Chat Completion request: {
+      messages: [ { role: 'user', content: 'Propose only established changes.' } ],
+      prompt: undefined,
+      model: 'Qwen3.8-27B-Serenity',
+      temperature: 1,
+      max_tokens: 8192,
+      max_completion_tokens: undefined,
+      stream: false,
+      presence_penalty: 0,
+      frequency_penalty: 0,
+      top_p: 0.95,
+      top_k: 20,
+      stop: undefined,
+      logit_bias: undefined,
+      seed: undefined,
+      n: undefined,
+      logprobs: undefined,
+      top_logprobs: undefined,
+      chat_template_kwargs: { enable_thinking: true, preserve_thinking: false },
+      min_p: 0,
+      repeat_penalty: 1,
+      response_format: {
+        type: 'json_schema',
+        json_schema: { name: 'fixture', strict: true, schema: [Object] }
+      }
+    }
+
+      at ../src/endpoints/backends/chat-completions.js:2588:17
+
+  console.debug
+    Chat Completion response: { choices: [ { message: [Object] } ] }
+
+      at ../src/endpoints/backends/chat-completions.js:2600:21
+
+  console.debug
+    Chat Completion request: {
+      messages: [ { role: 'user', content: 'A synthetic request.' } ],
+      prompt: undefined,
+      model: 'Qwen3.8-27B-Serenity',
+      temperature: 0.25,
+      max_tokens: 8192,
+      max_completion_tokens: undefined,
+      stream: false,
+      presence_penalty: 0,
+      top_p: 0.95,
+      top_k: 20,
+      stop: undefined,
+      logit_bias: undefined,
+      seed: undefined,
+      n: undefined,
+      logprobs: undefined,
+      top_logprobs: undefined,
+      chat_template_kwargs: { enable_thinking: true, preserve_thinking: false },
+      min_p: 0,
+      repeat_penalty: 1
+    }
+
+      at ../src/endpoints/backends/chat-completions.js:2588:17
+
+  console.debug
+    Chat Completion response: { choices: [ { message: [Object] } ] }
+
+      at ../src/endpoints/backends/chat-completions.js:2600:21
+
+  console.debug
+    Chat Completion request: {
+      messages: [
+        {
+          role: 'system',
+          content: '<semantic-play-setting-context>\n' +
+            'pack=old-republic-crossroads\n' +
+            'Accepted context selected from explicit chat state. Absent entries are unavailable.\n' +
+            '[oran-pell-core]\n' +
+            'Oran Pell is a sixteen-year-old nonbinary Force-sensitive pilgrim: observant, generous toward unfamiliar practices, and increasingly unwilling to call every doctrine equally harmless. They believe no institution owns the Force. Their quest follows a vanished teacher and a damaged tradition whose humane and coercive teachings have become difficult to separate.\n' +
+            '</semantic-play-setting-context>'
+        },
+        {
+          role: 'user',
+          content: 'I ask Oran Pell about the shrine.\n' +
+            '\n' +
+            '<semantic-play-control>\n' +
+            'intent=dialogue\n' +
+            'signals=dialogue\n' +
+            'progression=respond\n' +
+            'detail=contextual\n' +
+            'presentation=beat\n' +
+            'scope=scene\n' +
+            "NPCs answer in their own voices. Address the protagonist as 'you', never 'the player', and never define their feelings, wants, or meaning. Show speech and visible NPC actions only. Keep physical distance unless the player initiated or consented to contact. Do not narrate private deliberation or reposition the protagonist. Leave room for reply.\n" +
+            'Accepted durable state: known=Fact 0; Fact 1; Fact 2; Fact 3; Fact 4; Fact 5; Fact 6; Fact 7; Fact 8; Fact 9; Fact 10; Fact 11; Fact 12; Fact 13; Fact 14; Fact 15; Fact 16; Fact 17; Fact 18; Fact 19; Fact 20; Fact 21; Fact 22; Fact 23\n' +
+            'Later verbatim chat may explicitly change even durable state; never preserve it against a narrated change.\n' +
+            'Fallback scene snapshot (not yet reviewed during this chat): present=Oran Pell\n' +
+            'The scene snapshot is a fallback, never a demand to rewind. Later verbatim chat overrides its time, location, presence, possessions, conditions, and open threads.\n' +
+            'Do not quote or mention this control note.\n' +
+            '</semantic-play-control>'
+        }
+      ],
+      prompt: undefined,
+      model: 'Qwen3.8-27B-Serenity',
+      temperature: 1,
+      max_tokens: 8192,
+      max_completion_tokens: undefined,
+      stream: false,
+      presence_penalty: 0,
+      frequency_penalty: 0,
+      top_p: 0.95,
+      top_k: 20,
+      stop: undefined,
+      logit_bias: undefined,
+      seed: undefined,
+      n: undefined,
+      logprobs: undefined,
+      top_logprobs: undefined,
+      chat_template_kwargs: { enable_thinking: true, preserve_thinking: false },
+      min_p: 0,
+      repeat_penalty: 1
+    }
+
+      at ../src/endpoints/backends/chat-completions.js:2588:17
+
+  console.debug
+    Chat Completion response: { choices: [ { message: [Object] } ] }
+
+      at ../src/endpoints/backends/chat-completions.js:2600:21
+
+(node:3900) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS tests/serious-request.test.js
+  SeriousTavern actual custom request transport
+    √ Serenity preset overrides backend reasoning preservation and transmits intended sampler values (19 ms)
+    √ late system state keeps its role; no fabricated placeholder or merged dialogue (2 ms)
+    √ quiet structured harvest retains schema, role order and non-preservation (3 ms)
+    √ capture observes final custom overrides and exclusions rather than a reconstructed body (2 ms)
+    √ generated SemanticPlay state and selected lore survive the real custom transport (12 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       5 passed, 5 total
+Snapshots:   0 total
+Time:        0.755 s, estimated 1 s
+Ran all test suites matching /tests\\serious-request.test.js/i.

@@ -58,6 +58,10 @@ export function mergeRoleplaySettings(current, preset) {
     throw new Error("Unsupported SeriousTavern settings preset.");
   }
   const settings = cloneJson(current || {});
+  if (preset.reasoning) {
+    settings.power_user = settings.power_user && typeof settings.power_user === "object" ? settings.power_user : {};
+    settings.power_user.reasoning = Object.assign({}, settings.power_user.reasoning || {}, preset.reasoning);
+  }
   settings.extension_settings = settings.extension_settings && typeof settings.extension_settings === "object"
     ? settings.extension_settings
     : {};
@@ -84,6 +88,9 @@ export function mergeRoleplaySettings(current, preset) {
 }
 
 export function settingsMatchPreset(settings, preset) {
+  for (const [key, value] of Object.entries(preset.reasoning || {})) {
+    if (settings?.power_user?.reasoning?.[key] !== value) return false;
+  }
   const extensions = settings?.extension_settings;
   if (!extensions || !Array.isArray(extensions.disabledExtensions)) return false;
   if (!preset.disableBuiltIns.every(id => extensions.disabledExtensions.includes(id))) return false;

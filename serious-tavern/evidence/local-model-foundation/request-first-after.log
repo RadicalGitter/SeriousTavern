@@ -1,0 +1,154 @@
+  console.debug
+    Chat Completion request: {
+      messages: [
+        { role: 'system', content: 'World authority.' },
+        { role: 'user', content: 'I look at the door.' }
+      ],
+      prompt: undefined,
+      model: 'Qwen3.8-27B-Serenity',
+      temperature: 1,
+      max_tokens: 8192,
+      max_completion_tokens: undefined,
+      stream: false,
+      presence_penalty: 0,
+      frequency_penalty: 0,
+      top_p: 0.95,
+      top_k: 20,
+      stop: undefined,
+      logit_bias: undefined,
+      seed: undefined,
+      n: undefined,
+      logprobs: undefined,
+      top_logprobs: undefined,
+      chat_template_kwargs: { enable_thinking: true, preserve_thinking: false },
+      min_p: 0,
+      repeat_penalty: 1
+    }
+
+      at ../src/endpoints/backends/chat-completions.js:2588:17
+
+  console.debug
+    Chat Completion response: { choices: [ { message: [Object] } ] }
+
+      at ../src/endpoints/backends/chat-completions.js:2600:21
+
+  console.debug
+    Chat Completion request: {
+      messages: [
+        { role: 'system', content: 'Card contract.' },
+        { role: 'user', content: 'I wait.' },
+        { role: 'assistant', content: 'The room stays quiet.' },
+        { role: 'system', content: 'Accepted scene state.' },
+        {
+          role: 'user',
+          content: 'I look at the window.\n' +
+            '<semantic-play-control>hold</semantic-play-control>'
+        }
+      ],
+      prompt: undefined,
+      model: 'Qwen3.8-27B-Serenity',
+      temperature: 1,
+      max_tokens: 8192,
+      max_completion_tokens: undefined,
+      stream: false,
+      presence_penalty: 0,
+      frequency_penalty: 0,
+      top_p: 0.95,
+      top_k: 20,
+      stop: undefined,
+      logit_bias: undefined,
+      seed: undefined,
+      n: undefined,
+      logprobs: undefined,
+      top_logprobs: undefined,
+      chat_template_kwargs: { enable_thinking: true, preserve_thinking: false },
+      min_p: 0,
+      repeat_penalty: 1
+    }
+
+      at ../src/endpoints/backends/chat-completions.js:2588:17
+
+  console.debug
+    Chat Completion response: { choices: [ { message: [Object] } ] }
+
+      at ../src/endpoints/backends/chat-completions.js:2600:21
+
+  console.debug
+    Chat Completion request: {
+      messages: [ { role: 'user', content: 'Propose only established changes.' } ],
+      prompt: undefined,
+      model: 'Qwen3.8-27B-Serenity',
+      temperature: 1,
+      max_tokens: 8192,
+      max_completion_tokens: undefined,
+      stream: false,
+      presence_penalty: 0,
+      frequency_penalty: 0,
+      top_p: 0.95,
+      top_k: 20,
+      stop: undefined,
+      logit_bias: undefined,
+      seed: undefined,
+      n: undefined,
+      logprobs: undefined,
+      top_logprobs: undefined,
+      chat_template_kwargs: { enable_thinking: true, preserve_thinking: false },
+      min_p: 0,
+      repeat_penalty: 1,
+      response_format: {
+        type: 'json_schema',
+        json_schema: { name: 'fixture', strict: true, schema: [Object] }
+      }
+    }
+
+      at ../src/endpoints/backends/chat-completions.js:2588:17
+
+  console.debug
+    Chat Completion response: { choices: [ { message: [Object] } ] }
+
+      at ../src/endpoints/backends/chat-completions.js:2600:21
+
+  console.debug
+    Chat Completion request: {
+      messages: [ { role: 'user', content: 'A synthetic request.' } ],
+      prompt: undefined,
+      model: 'Qwen3.8-27B-Serenity',
+      temperature: 0.25,
+      max_tokens: 8192,
+      max_completion_tokens: undefined,
+      stream: false,
+      presence_penalty: 0,
+      top_p: 0.95,
+      top_k: 20,
+      stop: undefined,
+      logit_bias: undefined,
+      seed: undefined,
+      n: undefined,
+      logprobs: undefined,
+      top_logprobs: undefined,
+      chat_template_kwargs: { enable_thinking: true, preserve_thinking: false },
+      min_p: 0,
+      repeat_penalty: 1
+    }
+
+      at ../src/endpoints/backends/chat-completions.js:2588:17
+
+  console.debug
+    Chat Completion response: { choices: [ { message: [Object] } ] }
+
+      at ../src/endpoints/backends/chat-completions.js:2600:21
+
+(node:16464) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS tests/serious-request.test.js
+  SeriousTavern actual custom request transport
+    √ Serenity preset overrides backend reasoning preservation and transmits intended sampler values (15 ms)
+    √ late system state keeps its role; no fabricated placeholder or merged dialogue (2 ms)
+    √ quiet structured harvest retains schema, role order and non-preservation (3 ms)
+    √ capture observes final custom overrides and exclusions rather than a reconstructed body (2 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       4 passed, 4 total
+Snapshots:   0 total
+Time:        0.683 s, estimated 5 s
+Ran all test suites matching /tests\\serious-request.test.js/i.

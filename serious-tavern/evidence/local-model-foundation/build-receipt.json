@@ -1,0 +1,208 @@
+{
+  "schemaVersion": 1,
+  "mode": "portable",
+  "pngIncluded": false,
+  "deploymentPerformed": false,
+  "files": [
+    {
+      "path": "client-extension/adornment/identity-lines.js",
+      "sha256": "c95c8057b3047798bb70d188c2a3a548c29dcc0ec07c857302f3257cfc996f0d"
+    },
+    {
+      "path": "client-extension/adornment/index.js",
+      "sha256": "157e8b155e3c588a4d0a395df0526632a9a015f799fa7677226696fcd1fdf8a3"
+    },
+    {
+      "path": "client-extension/core/command-deck.js",
+      "sha256": "109199e77d3cc43f404a074fdb8c606dbc461a8303fc8781bd71d56fc56d1b38"
+    },
+    {
+      "path": "client-extension/core/intents.js",
+      "sha256": "f7be849b23ba3128a3abf7890f5f0c432399772ea5984eb64fb20c38111091b8"
+    },
+    {
+      "path": "client-extension/core/prompt-control.js",
+      "sha256": "7c31a1939ee136667a88a09f9071d8361b393169503f7f782ae6fa183f8ff8ec"
+    },
+    {
+      "path": "client-extension/core/setting-context.js",
+      "sha256": "6fc0e5a07207bb034ecec6cf00e776f2690b60d300910a4e2d4b45054c90dbe4"
+    },
+    {
+      "path": "client-extension/core/state-proposal.js",
+      "sha256": "aa36147248073d4b320bc017c2d6e2c36742371ae17d9cea2f085e9da84b4814"
+    },
+    {
+      "path": "client-extension/core/state.js",
+      "sha256": "ae80c5c6f02d3dff28d9d6f6cb729aded12ee6ddaa5f774fbe182d083614ae5f"
+    },
+    {
+      "path": "client-extension/core/story-gravity.js",
+      "sha256": "25faae994c8f18143070d0d74928ff16d784b4947bba3b69833f81899604eb57"
+    },
+    {
+      "path": "client-extension/index.js",
+      "sha256": "15282f93d55c5141f221a5d9b6f1b4a370ceea0d1d44f39bdcc64fbba6692e85"
+    },
+    {
+      "path": "client-extension/manifest.json",
+      "sha256": "97dc7f26aaa339bf1ca6fd0830a0b97b4c89753195deffa81864bb538c5c4efa"
+    },
+    {
+      "path": "client-extension/music/proposal.js",
+      "sha256": "eb217042da3166c24761ae23927d7f4c92421c7e6ec0d12ce0b87c0573aaf77f"
+    },
+    {
+      "path": "client-extension/music/tag-board.js",
+      "sha256": "8d8c9c61b256ecdfa991792711dca020ec30f3c01824abfbfbd3eab2b3d6f615"
+    },
+    {
+      "path": "client-extension/music/taxonomy.js",
+      "sha256": "65f9dab1d0b34fbaca37866d6cc2ab51205dad9f68daf1b9fadde87c1bf59491"
+    },
+    {
+      "path": "client-extension/packs/index.js",
+      "sha256": "88fcb46a02bb44efc65a0d738aa6fe0173fcea25dff68c751ef618110be8096b"
+    },
+    {
+      "path": "client-extension/reference/context.js",
+      "sha256": "fd79241d0b32e8fcf11387f336be0a4326019070a138324b4280e2a193d0c3cb"
+    },
+    {
+      "path": "client-extension/style.css",
+      "sha256": "0b366633c0963f9b6ac465095eb4b2f88d51d0840e52293145a97c4d588f7d77"
+    },
+    {
+      "path": "package.json",
+      "sha256": "a90fc33418afa2b9cbf4768524b021135b965ecdf993457505bfae3ac44a8428"
+    },
+    {
+      "path": "server-plugin/index.mjs",
+      "sha256": "f0159646e3352c8fbc105c3269b038012ae7139bd051616197c22e60c4e8728d"
+    },
+    {
+      "path": "server-plugin/proposal-store.mjs",
+      "sha256": "fa3530451b06ecf61460edac917df3907cd35fc060fc514c944dd4801bdaae1c"
+    },
+    {
+      "path": "server-plugin/proposal.mjs",
+      "sha256": "eb217042da3166c24761ae23927d7f4c92421c7e6ec0d12ce0b87c0573aaf77f"
+    },
+    {
+      "path": "server-plugin/reference-library.mjs",
+      "sha256": "fd843616c4a985915263766ffe046c89ec58860ca70a4358f5e73ca80c7e16f2"
+    },
+    {
+      "path": "server-plugin/reference/context.js",
+      "sha256": "fd79241d0b32e8fcf11387f336be0a4326019070a138324b4280e2a193d0c3cb"
+    },
+    {
+      "path": "setting-packs/old-republic/backgrounds/background-catalogue.json",
+      "sha256": "2d73bf46e07bee5bfa6dd18b7fc47de2bdb36ea2bc15476e9ab01a16e6264ad2"
+    },
+    {
+      "path": "setting-packs/old-republic/backgrounds/sillytavern-data/backgrounds/SP Old Republic - Abandoned Force Shrine Approach.jpeg",
+      "sha256": "b11b7bba9fe9011aa91dce954a1e12794ee18aebeb3cfdb448cd1df817e4d51c"
+    },
+    {
+      "path": "setting-packs/old-republic/backgrounds/sillytavern-data/backgrounds/SP Old Republic - Capital City Overlook.jpeg",
+      "sha256": "cce1b4a26c0aa10a8edd15a3db91432e517646e4bd8caafcde78f8c5a7ade599"
+    },
+    {
+      "path": "setting-packs/old-republic/backgrounds/sillytavern-data/backgrounds/SP Old Republic - Covert Cave Hideout.jpeg",
+      "sha256": "f5eff81defa12f8e6fe55e2b4739877a1212163f43467a69d64e140caba7403f"
+    },
+    {
+      "path": "setting-packs/old-republic/backgrounds/sillytavern-data/backgrounds/SP Old Republic - Damaged Relief Convoy Wreckage.png",
+      "sha256": "6db3efdc8d8a3dd5380fb8e19fe9837090253118dd85c5131cbcaea87703c57e"
+    },
+    {
+      "path": "setting-packs/old-republic/backgrounds/sillytavern-data/backgrounds/SP Old Republic - Dangerous Courier Cockpit.jpeg",
+      "sha256": "e6ab567bf0bde3073e5a781b2b80def5c583209434388855edd6e326b3db2aef"
+    },
+    {
+      "path": "setting-packs/old-republic/backgrounds/sillytavern-data/backgrounds/SP Old Republic - Field Triage Refuge.jpeg",
+      "sha256": "003a911497c958f8b5d6528d2c13eddcb606eeb86a6d96e3ebf26279b5baf604"
+    },
+    {
+      "path": "setting-packs/old-republic/backgrounds/sillytavern-data/backgrounds/SP Old Republic - Force Vision Liminal Space.jpeg",
+      "sha256": "53f12ad46dcb110b86ca4120776e5e84ab11156f554f41808937eb44edc5651b"
+    },
+    {
+      "path": "setting-packs/old-republic/backgrounds/sillytavern-data/backgrounds/SP Old Republic - Formal Custody Hearing.jpeg",
+      "sha256": "17e812743303352fe2e5aa01c3f41d119733e3351b6c531f82bcaff1cf44be33"
+    },
+    {
+      "path": "setting-packs/old-republic/backgrounds/sillytavern-data/backgrounds/SP Old Republic - Frontier Repair Bay.jpeg",
+      "sha256": "31ef0d99713f464c9430118705fc01ba0f29d5a553abf2f1356eeaae1263b3e4"
+    },
+    {
+      "path": "setting-packs/old-republic/backgrounds/sillytavern-data/backgrounds/SP Old Republic - Hazardous Asteroid Passage.jpg",
+      "sha256": "960472b83999d9ec882b38c5798387e0a311995cef1d724f0d39feeafb83d00d"
+    },
+    {
+      "path": "setting-packs/old-republic/backgrounds/sillytavern-data/backgrounds/SP Old Republic - Highland Training Terrace.png",
+      "sha256": "af5ca150aec41d304ccf5c6a95a1f6b77d419ea220d6ef333c1a0559a6205900"
+    },
+    {
+      "path": "setting-packs/old-republic/backgrounds/sillytavern-data/backgrounds/SP Old Republic - Hostile Alien Wilderness.jpeg",
+      "sha256": "c4c157e97a251a6dc059f3336ecb20c54ecf4c2f09df0d6e7d065798b3e21f9e"
+    },
+    {
+      "path": "setting-packs/old-republic/backgrounds/sillytavern-data/backgrounds/SP Old Republic - Monastic Archive Hall.png",
+      "sha256": "c9b8c4933a9c01b2ced0a823796f8ddbd53f00a34da37d417b0896d9b6d0d3e6"
+    },
+    {
+      "path": "setting-packs/old-republic/backgrounds/sillytavern-data/backgrounds/SP Old Republic - Neutral Frontier Market.png",
+      "sha256": "766bae1afb0a01086a24f9415dc9980defca00863f5f35413a5c76ff3dce469d"
+    },
+    {
+      "path": "setting-packs/old-republic/backgrounds/sillytavern-data/backgrounds/SP Old Republic - Orbital Transfer Concourse.png",
+      "sha256": "54e8e632dcdf7681a3811289e28fe52fd177ed61107571336acd64b96ef08ec4"
+    },
+    {
+      "path": "setting-packs/old-republic/backgrounds/sillytavern-data/backgrounds/SP Old Republic - Oris Veil Industrial Salvage.png",
+      "sha256": "4e5d833ff013a14d695b8b64bcffc9701942479275347fea0f26a145b552a815"
+    },
+    {
+      "path": "setting-packs/old-republic/backgrounds/sillytavern-data/backgrounds/SP Old Republic - Oris Veil Salt-Flat Observatory.jpeg",
+      "sha256": "43e5f3c0102c974eaa855879bf922510dc64c9d10ea8be3dca6ca7faef61eef0"
+    },
+    {
+      "path": "setting-packs/old-republic/backgrounds/sillytavern-data/backgrounds/SP Old Republic - Packet Ship Dining Alcove.png",
+      "sha256": "6c8633e4708b5fbf9b45ff32057445a1c65a7fd6973f4fffee2ac3721361f0bd"
+    },
+    {
+      "path": "setting-packs/old-republic/backgrounds/sillytavern-data/backgrounds/SP Old Republic - Relief Clinic Refuge.jpg",
+      "sha256": "755ec61196e7253058beacdc2a8946cf83e4bd5c16c7db6b7678e90d2b76e19c"
+    },
+    {
+      "path": "setting-packs/old-republic/backgrounds/sillytavern-data/backgrounds/SP Old Republic - Remote Moon Crossing.jpeg",
+      "sha256": "19444c27fff4cd16e80aba6cfb0eef330613426e6cd129028b7b36257b614275"
+    },
+    {
+      "path": "setting-packs/old-republic/backgrounds/sillytavern-data/backgrounds/SP Old Republic - Restricted Artifact Repository.jpeg",
+      "sha256": "1fb36610789b7f6e1749621cb237a3e69e4e15b013334f1eb5ef9de39d1eea48"
+    },
+    {
+      "path": "setting-packs/old-republic/backgrounds/sillytavern-data/backgrounds/SP Old Republic - Sealed Accord Vault.jpg",
+      "sha256": "8f4b8b69d7c2b36fcbcaadb7dcbad3a7a60d2962f0de4339eb5388af1fb1c9c1"
+    },
+    {
+      "path": "setting-packs/old-republic/backgrounds/sillytavern-data/backgrounds/SP Old Republic - Underworld Night District.jpg",
+      "sha256": "420cb31c35149748e08abb9df8a8b22c7709459292d84dc601ca5b0f8dff6420"
+    },
+    {
+      "path": "setting-packs/old-republic/old-republic-crossroads.character.json",
+      "sha256": "95c9fcdc05ec08ba1cd4dd8e8b34b16f60f3aa6bd91dd7b818dc73fb2a3dd751"
+    },
+    {
+      "path": "setting-packs/old-republic/old-republic-crossroads.world.json",
+      "sha256": "834e60c518820baab753f2ad7e92f47f57923260231be0c2888909e2443317d1"
+    },
+    {
+      "path": "sillytavern-links.json",
+      "sha256": "0132826b1bf3b64638a3b12baf2201488623de075a3ea2f4dbe7aeb4564f351b"
+    }
+  ]
+}

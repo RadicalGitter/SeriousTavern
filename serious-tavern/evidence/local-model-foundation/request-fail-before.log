@@ -1,0 +1,74 @@
+(node:19804) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+FAIL tests/serious-request.test.js
+  SeriousTavern actual custom request transport
+    × Serenity preset overrides backend reasoning preservation and transmits intended sampler values (1 ms)
+    × late system state keeps its role; no fabricated placeholder or merged dialogue (1 ms)
+    × quiet structured harvest retains schema, role order and non-preservation
+    × capture observes final custom overrides and exclusions rather than a reconstructed body (1 ms)
+
+  ● SeriousTavern actual custom request transport › Serenity preset overrides backend reasoning preservation and transmits intended sampler values
+
+    ENOENT: no such file or directory, open 'Z:\Programmering\Projects\Roleplay\SeriousTavern\default\content\presets\openai\SeriousTavern - Serenity llama.cpp.json'
+
+      67 | }
+      68 | const presetFile = path.join(root, 'default/content/presets/openai/SeriousTavern - Serenity llama.cpp.json');
+    > 69 | const readPreset = () => JSON.parse(fs.readFileSync(presetFile, 'utf8'));
+         |                                        ^
+      70 |
+      71 | describe('SeriousTavern actual custom request transport', () => {
+      72 |     test('Serenity preset overrides backend reasoning preservation and transmits intended sampler values', async () => {
+
+      at readPreset (serious-request.test.js:69:40)
+      at Object.<anonymous> (serious-request.test.js:73:24)
+
+  ● SeriousTavern actual custom request transport › late system state keeps its role; no fabricated placeholder or merged dialogue
+
+    ENOENT: no such file or directory, open 'Z:\Programmering\Projects\Roleplay\SeriousTavern\default\content\presets\openai\SeriousTavern - Serenity llama.cpp.json'
+
+      67 | }
+      68 | const presetFile = path.join(root, 'default/content/presets/openai/SeriousTavern - Serenity llama.cpp.json');
+    > 69 | const readPreset = () => JSON.parse(fs.readFileSync(presetFile, 'utf8'));
+         |                                        ^
+      70 |
+      71 | describe('SeriousTavern actual custom request transport', () => {
+      72 |     test('Serenity preset overrides backend reasoning preservation and transmits intended sampler values', async () => {
+
+      at readPreset (serious-request.test.js:69:40)
+      at Object.<anonymous> (serious-request.test.js:99:31)
+
+  ● SeriousTavern actual custom request transport › quiet structured harvest retains schema, role order and non-preservation
+
+    ENOENT: no such file or directory, open 'Z:\Programmering\Projects\Roleplay\SeriousTavern\default\content\presets\openai\SeriousTavern - Serenity llama.cpp.json'
+
+      67 | }
+      68 | const presetFile = path.join(root, 'default/content/presets/openai/SeriousTavern - Serenity llama.cpp.json');
+    > 69 | const readPreset = () => JSON.parse(fs.readFileSync(presetFile, 'utf8'));
+         |                                        ^
+      70 |
+      71 | describe('SeriousTavern actual custom request transport', () => {
+      72 |     test('Serenity preset overrides backend reasoning preservation and transmits intended sampler values', async () => {
+
+      at readPreset (serious-request.test.js:69:40)
+      at Object.<anonymous> (serious-request.test.js:104:36)
+
+  ● SeriousTavern actual custom request transport › capture observes final custom overrides and exclusions rather than a reconstructed body
+
+    ENOENT: no such file or directory, open 'Z:\Programmering\Projects\Roleplay\SeriousTavern\default\content\presets\openai\SeriousTavern - Serenity llama.cpp.json'
+
+      67 | }
+      68 | const presetFile = path.join(root, 'default/content/presets/openai/SeriousTavern - Serenity llama.cpp.json');
+    > 69 | const readPreset = () => JSON.parse(fs.readFileSync(presetFile, 'utf8'));
+         |                                        ^
+      70 |
+      71 | describe('SeriousTavern actual custom request transport', () => {
+      72 |     test('Serenity preset overrides backend reasoning preservation and transmits intended sampler values', async () => {
+
+      at readPreset (serious-request.test.js:69:40)
+      at Object.<anonymous> (serious-request.test.js:111:24)
+
+Test Suites: 1 failed, 1 total
+Tests:       4 failed, 4 total
+Snapshots:   0 total
+Time:        4.48 s
+Ran all test suites matching /tests\\serious-request.test.js/i.

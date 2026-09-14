@@ -1,0 +1,181 @@
+(node:27732) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS tests/prompt-converters.test.js
+  addAssistantPrefix
+    √ returns empty array unchanged (2 ms)
+    √ sets property on last message when it is assistant and no tools (1 ms)
+    √ does not set property when tools are present
+    √ does not set property when last message is not assistant (1 ms)
+    √ does not set property when a tool role message exists in prompt
+  convertTextCompletionPrompt
+    √ passes through string input unchanged
+    √ converts basic message array to text format (1 ms)
+    √ uses name instead of role for named system messages
+    √ handles empty array
+  calculateClaudeBudgetTokens
+    adaptive model (Opus 4.6+)
+      √ auto returns null (1 ms)
+      √ min returns "low"
+      √ low returns "low"
+      √ medium returns "medium"
+      √ high returns "high"
+      √ max returns "max"
+    traditional model
+      √ auto returns null
+      √ min returns 1024 regardless of maxTokens (1 ms)
+      √ low is 10% of maxTokens, floored to 1024
+      √ medium is 25% of maxTokens
+      √ high is 50% of maxTokens
+      √ max is 95% of maxTokens
+      √ non-streaming caps at 21333
+      √ streaming does not cap at 21333 (1 ms)
+  calculateGoogleBudgetTokens
+    √ returns null for unrecognized model
+    gemini-3 flash
+      √ auto returns null
+      √ min returns minimal
+      √ low returns low
+      √ medium returns medium
+      √ high returns high (1 ms)
+      √ max returns high
+    gemini-3 pro
+      √ auto returns null
+      √ min returns low
+      √ low returns low
+      √ medium returns low
+      √ high returns high
+      √ max returns high (1 ms)
+    flash (non-gemini-3)
+      √ auto returns -1
+      √ min returns 0 (1 ms)
+      √ caps at 24576
+    flash-lite
+      √ min returns 0
+      √ floors at 512
+    pro (non-gemini-3)
+      √ min returns 128
+      √ floors at 128
+      √ caps at 32768
+    model matching priority
+      √ flash-lite matches before flash (1 ms)
+  addReasoningContentToToolCalls
+    √ adds reasoning_content to messages with tool_calls
+    √ does not overwrite existing reasoning_content
+    √ skips messages without tool_calls
+    √ handles non-array input gracefully
+  embedOpenRouterMedia
+    √ converts audio data URLs to input_audio format (1 ms)
+    √ defaults to mp3 for unknown audio mime types
+    √ skips non-data-URL audio
+    √ keeps video_url type for video data URLs
+    √ skips non-data-URL video
+    √ respects audio=false option
+    √ respects video=false option
+    √ handles non-array input gracefully (1 ms)
+    √ skips messages with string content
+  cachingSystemPromptForOpenRouter
+    √ adds cache_control to string system message
+    √ adds cache_control with TTL
+    √ adds cache_control to last text part of array content
+    √ skips if system message already has cache_control (1 ms)
+    √ skips if array content already has cache_control
+    √ does nothing with empty array
+    √ does nothing without system message
+  convertAI21Messages
+    √ returns empty array for non-array input
+    √ extracts leading system messages into merged system prompt (1 ms)
+    √ prepends character name to example_assistant system messages
+    √ does not double-prepend if name already present
+    √ merges consecutive same-role messages
+    √ prepends name to non-system messages and deletes name property
+    √ inserts placeholder when all messages are system
+  convertCohereMessages
+    √ inserts placeholder for empty messages
+    √ prepends character name to example_assistant system messages
+    √ prepends user name to example_user system messages
+    √ prepends name to non-system messages
+    √ handles tool_calls by extracting function names
+  convertXAIMessages
+    √ returns empty array for non-array input
+    √ prepends char name to assistant messages
+    √ skips user role messages entirely
+    √ handles group names - does not double prefix
+  mergeMessages
+    √ squashes consecutive same-role messages (1 ms)
+    √ inserts placeholder for empty messages
+    √ removes name property and prepends to content for non-system
+    √ strict mode forces mid-prompt system to user
+    √ single mode forces all roles to user (1 ms)
+    √ single mode prepends charName to assistant, userName to user
+    √ tools=false removes tool_calls and tool_call_id
+    √ flattens array content and preserves image URLs via tokens (1 ms)
+  postProcessPrompt
+    √ NONE type returns messages unchanged
+    √ MERGE type merges consecutive same-role messages
+    √ deprecated CLAUDE type works same as MERGE
+  addOpenRouterSignatures
+    √ handles non-array input gracefully
+    √ detects google model format (1 ms)
+    √ detects anthropic model format
+    √ removes signature property from messages
+    √ removes signature property from tool_calls
+  getPromptNames
+    √ extracts names from request body (1 ms)
+    √ defaults to empty strings and array when missing
+    √ startsWithGroupName checks message prefix
+    √ coerces non-string group_names to strings
+  convertClaudePrompt
+    √ returns empty string for empty messages
+    √ basic conversion with Human/Assistant prefixes (1 ms)
+    √ adds assistant postfix when requested
+    √ adds assistant prefill when provided
+    √ system prompt mode sets first message role to system
+    √ exclude prefixes mode sets non-last messages to system (1 ms)
+    √ stringifies tool_calls into content
+  convertClaudeMessages
+    √ extracts leading system messages when useSysPrompt is true
+    √ inserts placeholder when all messages are system and useSysPrompt is true
+    √ converts system messages to user role after extraction
+    √ merges consecutive same-role messages
+    √ converts string content to array of text parts
+    √ converts image_url content to Claude base64 format
+    √ moves images from assistant to next user message
+    √ adds prefill as trailing assistant message (1 ms)
+    √ converts tool_calls to tool_use format
+    √ converts tool messages to tool_result format
+    √ replaces empty text content with zero-width space
+    √ prepends example_assistant name with charName in system prompt (1 ms)
+    √ removes name, tool_calls, and tool_call_id properties from output
+  convertGooglePrompt
+    √ extracts leading system messages into system_instruction
+    √ converts assistant role to model role
+    √ converts system and tool roles to user role (1 ms)
+    √ merges consecutive same-role messages (1 ms)
+    √ converts image_url to inlineData
+    √ converts tool_calls to functionCall parts
+    √ converts tool_call_id to functionResponse parts
+    √ prepends example names when useSysPrompt is true (1 ms)
+    √ does not extract system if useSysPrompt is false
+  convertMistralMessages
+    √ returns empty array for non-array input
+    √ prepends charName to example_assistant system messages
+    √ prepends userName to example_user system messages (1 ms)
+    √ prepends name to non-system messages
+    √ hashes tool call IDs
+    √ changes system to user when following assistant
+    √ merges user message after tool into previous user message
+  cachingAtDepthForClaude
+    √ adds cache_control at specified depth (1 ms)
+    √ skips trailing assistant messages (prefill)
+    √ does not modify messages when depth exceeds message count
+  cachingAtDepthForOpenRouterClaude
+    √ adds cache_control to string content by wrapping in array
+    √ adds cache_control to array content on last part
+    √ skips system messages for depth counting (1 ms)
+    √ skips trailing assistant prefill
+
+Test Suites: 1 passed, 1 total
+Tests:       144 passed, 144 total
+Snapshots:   0 total
+Time:        1.696 s
+Ran all test suites matching /tests\\prompt-converters.test.js/i.

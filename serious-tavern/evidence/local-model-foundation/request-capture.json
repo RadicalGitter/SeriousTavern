@@ -1,0 +1,197 @@
+{
+  "evidence": "Actual frontend parameter builder and server generate route; mocked outbound fetch, no socket or model; supplied assembled messages, not browser prompt assembly.",
+  "captures": [
+    {
+      "url": "http://127.0.0.1:7332/v1/chat/completions",
+      "body": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "I watch the rain."
+          }
+        ],
+        "model": "Qwen3.8-27B-Serenity",
+        "temperature": 1,
+        "max_tokens": 8192,
+        "stream": true,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "top_p": 0.95,
+        "top_k": 20,
+        "chat_template_kwargs": {
+          "enable_thinking": true,
+          "preserve_thinking": false
+        },
+        "min_p": 0,
+        "repeat_penalty": 1
+      }
+    },
+    {
+      "url": "http://127.0.0.1:7332/v1/chat/completions",
+      "body": {
+        "messages": [
+          {
+            "role": "system",
+            "content": "World authority."
+          },
+          {
+            "role": "user",
+            "content": "I look at the door."
+          }
+        ],
+        "model": "Qwen3.8-27B-Serenity",
+        "temperature": 1,
+        "max_tokens": 8192,
+        "stream": false,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "top_p": 0.95,
+        "top_k": 20,
+        "chat_template_kwargs": {
+          "enable_thinking": true,
+          "preserve_thinking": false
+        },
+        "min_p": 0,
+        "repeat_penalty": 1
+      }
+    },
+    {
+      "url": "http://127.0.0.1:7332/v1/chat/completions",
+      "body": {
+        "messages": [
+          {
+            "role": "system",
+            "content": "Card contract."
+          },
+          {
+            "role": "user",
+            "content": "I wait."
+          },
+          {
+            "role": "assistant",
+            "content": "The room stays quiet."
+          },
+          {
+            "role": "system",
+            "content": "Accepted scene state."
+          },
+          {
+            "role": "user",
+            "content": "I look at the window.\n<semantic-play-control>hold</semantic-play-control>"
+          }
+        ],
+        "model": "Qwen3.8-27B-Serenity",
+        "temperature": 1,
+        "max_tokens": 8192,
+        "stream": false,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "top_p": 0.95,
+        "top_k": 20,
+        "chat_template_kwargs": {
+          "enable_thinking": true,
+          "preserve_thinking": false
+        },
+        "min_p": 0,
+        "repeat_penalty": 1
+      }
+    },
+    {
+      "url": "http://127.0.0.1:7332/v1/chat/completions",
+      "body": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "Propose only established changes."
+          }
+        ],
+        "model": "Qwen3.8-27B-Serenity",
+        "temperature": 1,
+        "max_tokens": 8192,
+        "stream": false,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "top_p": 0.95,
+        "top_k": 20,
+        "chat_template_kwargs": {
+          "enable_thinking": true,
+          "preserve_thinking": false
+        },
+        "min_p": 0,
+        "repeat_penalty": 1,
+        "response_format": {
+          "type": "json_schema",
+          "json_schema": {
+            "name": "fixture",
+            "strict": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "summary": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "summary"
+              ],
+              "additionalProperties": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "url": "http://127.0.0.1:7332/v1/chat/completions",
+      "body": {
+        "messages": [
+          {
+            "role": "user",
+            "content": "A synthetic request."
+          }
+        ],
+        "model": "Qwen3.8-27B-Serenity",
+        "temperature": 0.25,
+        "max_tokens": 8192,
+        "stream": false,
+        "presence_penalty": 0,
+        "top_p": 0.95,
+        "top_k": 20,
+        "chat_template_kwargs": {
+          "enable_thinking": true,
+          "preserve_thinking": false
+        },
+        "min_p": 0,
+        "repeat_penalty": 1
+      }
+    },
+    {
+      "url": "http://127.0.0.1:7332/v1/chat/completions",
+      "body": {
+        "messages": [
+          {
+            "role": "system",
+            "content": "<semantic-play-setting-context>\npack=old-republic-crossroads\nAccepted context selected from explicit chat state. Absent entries are unavailable.\n[oran-pell-core]\nOran Pell is a sixteen-year-old nonbinary Force-sensitive pilgrim: observant, generous toward unfamiliar practices, and increasingly unwilling to call every doctrine equally harmless. They believe no institution owns the Force. Their quest follows a vanished teacher and a damaged tradition whose humane and coercive teachings have become difficult to separate.\n</semantic-play-setting-context>"
+          },
+          {
+            "role": "user",
+            "content": "I ask Oran Pell about the shrine.\n\n<semantic-play-control>\nintent=dialogue\nsignals=dialogue\nprogression=respond\ndetail=contextual\npresentation=beat\nscope=scene\nNPCs answer in their own voices. Address the protagonist as 'you', never 'the player', and never define their feelings, wants, or meaning. Show speech and visible NPC actions only. Keep physical distance unless the player initiated or consented to contact. Do not narrate private deliberation or reposition the protagonist. Leave room for reply.\nAccepted durable state: known=Fact 0; Fact 1; Fact 2; Fact 3; Fact 4; Fact 5; Fact 6; Fact 7; Fact 8; Fact 9; Fact 10; Fact 11; Fact 12; Fact 13; Fact 14; Fact 15; Fact 16; Fact 17; Fact 18; Fact 19; Fact 20; Fact 21; Fact 22; Fact 23\nLater verbatim chat may explicitly change even durable state; never preserve it against a narrated change.\nFallback scene snapshot (not yet reviewed during this chat): present=Oran Pell\nThe scene snapshot is a fallback, never a demand to rewind. Later verbatim chat overrides its time, location, presence, possessions, conditions, and open threads.\nDo not quote or mention this control note.\n</semantic-play-control>"
+          }
+        ],
+        "model": "Qwen3.8-27B-Serenity",
+        "temperature": 1,
+        "max_tokens": 8192,
+        "stream": false,
+        "presence_penalty": 0,
+        "frequency_penalty": 0,
+        "top_p": 0.95,
+        "top_k": 20,
+        "chat_template_kwargs": {
+          "enable_thinking": true,
+          "preserve_thinking": false
+        },
+        "min_p": 0,
+        "repeat_penalty": 1
+      }
+    }
+  ]
+}
