@@ -1,0 +1,4 @@
+interface:
+  display_name: "Build SillyTavern Characters"
+  short_description: "Build cards and lorebooks, not whole campaign settings"
+  default_prompt: "Use $build-sillytavern-character-lorebooks to create an import-ready character card and reactive, context-efficient lorebook from this setting."

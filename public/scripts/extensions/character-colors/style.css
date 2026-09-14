@@ -1,0 +1,67 @@
+.cc-adornment-root { display: inline; }
+
+#character-colors-settings { padding: 8px; }
+#character-colors-settings summary { cursor: pointer; font-weight: bold; }
+#character-colors-settings p { font-size: 0.9em; opacity: 0.8; }
+#character-colors-settings textarea { width: 100%; }
+#character-colors-settings .cc-status { display: block; }
+.cc-adornment-token {
+  color: var(--cc-adornment-color, currentColor);
+  text-decoration-color: currentColor;
+  text-shadow: 0 0 0.38em color-mix(in srgb, currentColor 18%, transparent);
+}
+
+.cc-adornment-bright,
+.cc-adornment-strong {
+  font-weight: 680;
+  text-shadow: 0 0 0.48em color-mix(in srgb, currentColor 28%, transparent);
+}
+
+.cc-adornment-body {
+  font-weight: 470;
+}
+
+.cc-marked-dialogue-quote {
+  color: var(--cc-quote-color, currentColor);
+  font-weight: 720;
+  text-shadow: 0 0 0.48em color-mix(in srgb, currentColor 28%, transparent);
+}
+
+.cc-marked-dialogue-body {
+  color: var(--cc-adornment-color, currentColor);
+  font-weight: 470;
+}
+
+.cc-adornment-identity {
+  text-decoration: none;
+}
+
+.cc-adornment-identity.cc-adornment-bright {
+  font-weight: 720;
+}
+
+.cc-adornment-identity.cc-adornment-body {
+  font-weight: 520;
+}
+
+.cc-adornment-accent {
+  letter-spacing: 0.012em;
+}
+
+.cc-adornment-glyph {
+  font-family: ui-monospace, "Cascadia Mono", "Consolas", monospace;
+  font-weight: 750;
+  letter-spacing: -0.08em;
+}
+
+@media (forced-colors: active) {
+  .cc-adornment-token {
+    color: CanvasText;
+    text-shadow: none;
+  }
+
+  .cc-adornment-bright,
+  .cc-adornment-strong {
+    font-weight: 750;
+  }
+}

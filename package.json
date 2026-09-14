@@ -120,6 +120,7 @@
         "init": "node src/server-init.js",
         "start": "node server.js",
         "test:serious": "node --test serious-tavern/test/*.test.mjs",
+        "test:serious:colors": "node --test serious-tavern/test/character-colors.browser.mjs",
         "test:serious:requests": "node --experimental-vm-modules tests/node_modules/jest/bin/jest.js --config tests/jest.config.json --runInBand tests/serious-request.test.js tests/prompt-converters.test.js",
         "debug": "node --inspect server.js",
         "start:global": "node server.js --global",

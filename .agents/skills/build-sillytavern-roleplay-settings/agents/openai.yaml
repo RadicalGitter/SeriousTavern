@@ -1,0 +1,4 @@
+interface:
+  display_name: "Build SillyTavern Settings"
+  short_description: "Build complete settings in self-contained local clones"
+  default_prompt: "Use $build-sillytavern-roleplay-settings as the lead skill to design, build, validate, and deploy a complete playable setting from this premise."

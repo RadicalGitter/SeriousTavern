@@ -1,0 +1,13 @@
+{
+    "display_name": "Character Colors",
+    "loading_order": 210,
+    "requires": [],
+    "optional": [],
+    "js": "index.js",
+    "css": "style.css",
+    "author": "Oscar Bergqvist and Codex",
+    "version": "1.0.0",
+    "minimum_client_version": "1.18.0",
+    "description": "Stable name-based dialogue colors. Display only; no prompts, memory or model calls.",
+    "hooks": { "activate": "init" }
+}

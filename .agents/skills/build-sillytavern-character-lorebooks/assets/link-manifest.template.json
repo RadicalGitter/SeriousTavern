@@ -1,0 +1,21 @@
+{
+  "userHandle": "default-user",
+  "links": [
+    {
+      "source": "sillytavern-data/worlds/Example - Main.json",
+      "destination": "worlds/Example - Main.json"
+    },
+    {
+      "source": "sillytavern-data/worlds/Example - Chronicle.json",
+      "destination": "worlds/Example - Chronicle.json"
+    },
+    {
+      "source": "sillytavern-data/characters/Example.png",
+      "destination": "characters/Example.png"
+    },
+    {
+      "source": "sillytavern-data/OpenAI Settings/Example Model.json",
+      "destination": "OpenAI Settings/Example Model.json"
+    }
+  ]
+}

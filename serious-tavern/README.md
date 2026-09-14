@@ -11,6 +11,33 @@ The owner-selected operating model is one self-contained instance per world,
 with local dependencies and data. The profile bootstrap below remains a legacy
 explicit interface; it is not a request to migrate existing worlds.
 
+## Bundled authoring skills
+
+Open this checkout in an authoring agent and describe the world or character
+you want to create or revise. [AGENTS.md](../AGENTS.md) routes to the two bundled
+skills in `.agents/skills/`, including their templates, references and helpers.
+No global skill installation or sibling WorldCreator checkout is needed.
+These instructions support manually edited continuity summaries; they are not
+automatically sent to the roleplay model or installed as runtime extensions.
+
+## Character Colors
+
+Character Colors is built in and enabled by default unless the user disables
+it. Open **Extensions → Character Colors** to toggle coloring or optionally
+connect character names, aliases and pronouns. Colors are derived from normalized
+names, not saved color assignments. The nine readable color pairs can collide;
+renaming a canonical character may change its color.
+
+Explicit dialogue labels work without setup. Register names for narrative name
+highlighting and conservative prose attribution; ambiguous speakers remain
+generic. No special model markup is required. Rendering changes neither saved
+chat nor model prompts and has no memory, state or model dependency. Existing
+SemanticPlay visuals remain separate and should not be enabled alongside this
+renderer; the extension defers when it detects active legacy adornment.
+
+See [extraction and verification evidence](character-colors.md). This extension
+is independent of the optional Summaryception/bootstrap bundle below.
+
 ## Local-model development preset
 
 `SeriousTavern - Serenity llama.cpp` is a native Chat Completion preset for the

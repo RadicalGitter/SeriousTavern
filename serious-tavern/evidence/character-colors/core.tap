@@ -1,0 +1,39 @@
+
+> sillytavern@1.18.0 test:serious
+> node --test serious-tavern/test/*.test.mjs
+
+✔ speaker identity normalization and palette selection are deterministic (1.1532ms)
+✔ curated speaker pairs remain same-hue, visibly tiered, and legible on the MUD background (0.3224ms)
+✔ explicit speaker labels seed bright labels and quote marks with darker same-palette dialogue (1.9252ms)
+✔ bracket labels and a caller-supplied default speaker color dialogue without changing text (1.6177ms)
+✔ safe semantic markup produces bounded text tokens, preserves source, and never emits HTML (0.2461ms)
+✔ speaker markup becomes same-palette dialogue only for an admitted identity (5.2385ms)
+✔ multiple speaker wrappers preserve apostrophes and contract-compliant embedded quotations (0.8023ms)
+✔ semantic accents are restrained by a hard display limit (0.3733ms)
+✔ registered names and aliases receive canonical identity colors in narration and dialogue labels (1.1462ms)
+✔ pronouns color only after a unique matching referent in the current line or paragraph (0.4172ms)
+✔ matching pronouns remain plain when two explicit referents are plausible (0.2148ms)
+✔ unlabelled prose dialogue inherits a unique current referent's canonical palette (0.9782ms)
+✔ unlabelled prose dialogue stays generic when multiple current referents are plausible (0.6248ms)
+✔ the authored Old Republic greeting attributes each quotation to its written speaker (4.0785ms)
+✔ exact resolver spans share the identity-token contract without requiring visible antecedents (0.3747ms)
+✔ identity and resolver inputs are bounded and fail closed (0.4826ms)
+✔ plans are immutable and idempotent while unmatched quotes remain ordinary text (0.1179ms)
+✔ the curated extension pack is fully pinned (1.6692ms)
+✔ roleplay settings preserve unrelated settings and secrets (0.9234ms)
+✔ config patch disables both automatic update paths without flattening the file (0.3599ms)
+✔ broad data roots are rejected (0.2726ms)
+✔ roleplay preparation disables reasoning reinsertion without erasing stored or display preferences (0.6166ms)
+✔ identity lines round-trip public names, pronouns, and aliases (2.8936ms)
+✔ identity lines reject ambiguous extra fields (0.2851ms)
+✔ native preset is discoverable and retains the platform's card, lore and history markers (1.4374ms)
+✔ the real prompt reasoning inserter omits historical thoughts under prepared settings (1.9173ms)
+✔ the native budget reserves generation space within the provisional context (1.211ms)
+ℹ tests 27
+ℹ suites 0
+ℹ pass 27
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 85.0441

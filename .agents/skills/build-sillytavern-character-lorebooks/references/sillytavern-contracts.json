@@ -1,0 +1,17 @@
+{
+  "contracts": [
+    {
+      "id": "sillytavern-1.18.0-519401f7",
+      "packageVersion": "1.18.0",
+      "verifiedRevision": "519401f7a7e4b566c11ab31dd256bde0bed75678",
+      "verifiedDate": "2026-08-31",
+      "reference": "references/sillytavern-1.18.0.md",
+      "criticalFiles": {
+        "src/validator/TavernCardValidator.js": "77a0c34c412c205c943fb1ea87cf58cf5f206956fd397708b15dcc02ebf1d928",
+        "src/endpoints/characters.js": "6b430c2459aa77d3e1a55d7f2aff664485f9323e2cbc71696dec05e7f7bae68e",
+        "src/endpoints/worldinfo.js": "b2bc5ec953727853eba14a03fd0859a34cfa77c8b043bc01aecd820a62df49a7",
+        "public/scripts/world-info.js": "5ba94f74ab7c1f13db7c2ac3dc8778f0174d95278cc9698b24bb1a9c8ab76d61"
+      }
+    }
+  ]
+}
