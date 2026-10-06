@@ -29,6 +29,13 @@ colors and supports optional aliases in Extensions settings. It does not need
 SemanticPlay, a state ledger, or extra prompt instructions. Preserve that
 separation when changing presentation.
 
+Swipe Pregeneration is a built-in, default-enabled extension at
+`public/scripts/extensions/swipe-pregen/`. It preserves the visible reply during
+manual swipe generation and supports sequential batches. Read
+[its source and verification notes](serious-tavern/swipe-pregen.md) before
+changing it. Keep generation explicit and preserve native prompts, reasoning,
+swipes and cancellation. Updates are reviewed with the fork, not auto-installed.
+
 ## Keep authoring and play simple
 
 The owner's normal continuity workflow is to request a summary, edit it, and
@@ -77,6 +84,8 @@ in `tests/`. Do not run bootstrap or `Start.bat` as a test prerequisite.
 - `npm run test:serious:colors` checks real visual modules in an isolated
   headless browser fixture. It requires the `tests/` dependencies and installed
   Edge by default, starts no application server and closes its test browser.
+- `npm run test:serious:swipes` checks the bundled extension with native manifest
+  discovery and an isolated browser fixture using simulated generation.
 - For cards/lorebooks, use the bundled compatibility probe and the skill's
   deterministic source, retrieval and regeneration checks.
 

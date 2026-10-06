@@ -38,6 +38,20 @@ renderer; the extension defers when it detects active legacy adornment.
 See [extraction and verification evidence](character-colors.md). This extension
 is independent of the optional Summaryception/bootstrap bundle below.
 
+## Swipe Pregeneration
+
+Swipe Pregeneration is built in and enabled by default unless the user disables
+it in Extensions. After an AI reply, click the **double-arrow button** beside the
+swipe controls to generate an alternative while continuing to read the current
+reply. A notification announces the new swipe; use the normal swipe arrows when
+you want to read it. **Wand menu → Swipe pre-generation** queues additional
+alternatives sequentially, with a default of one extra reply.
+
+The extension uses native swipe generation with your existing API, samplers,
+prompt and reasoning settings. It makes no model calls until explicitly started.
+The batch Stop button stops the active generation and cancels remaining swipes.
+See [integration and offline verification](swipe-pregen.md).
+
 ## Local-model development preset
 
 `SeriousTavern - Serenity llama.cpp` is a native Chat Completion preset for the
@@ -56,11 +70,11 @@ created no world instance, and changed no external launcher.
 See [development evidence and remaining work](development.md) for the actual
 transport checks and their browser/model limitations.
 
-SeriousTavern is an upstream-compatible SillyTavern fork, not a bundle of
-vendored extension code. The bootstrap clones reviewed extensions into an
+SeriousTavern is an upstream-compatible SillyTavern fork with selected built-in
+extensions. The optional bootstrap clones reviewed third-party extensions into an
 explicit profile data root at commits recorded in `extensions.lock.json`.
-Chats, notes, settings, keys, models, generated summaries, and extension source
-trees remain ignored user data.
+Chats, notes, settings, keys, models, generated summaries, and user-installed
+extension trees remain ignored user data.
 
 ## Roleplay v1 bundle
 

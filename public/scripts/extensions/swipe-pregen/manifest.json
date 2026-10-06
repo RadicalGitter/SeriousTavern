@@ -1,0 +1,15 @@
+{
+    "display_name": "Swipe Pregeneration",
+    "loading_order": 10,
+    "requires": [],
+    "optional": [],
+    "js": "index.js",
+    "css": "style.css",
+    "author": "nicoolodion",
+    "version": "1.0.0",
+    "homePage": "https://github.com/nicoolodion/SillyTavern-SwipePregen",
+    "auto_update": false,
+    "minimum_client_version": "1.18.0",
+    "description": "Generate alternative replies while the current swipe stays readable, or queue additional swipes. Generation starts only on request.",
+    "hooks": { "activate": "init" }
+}
