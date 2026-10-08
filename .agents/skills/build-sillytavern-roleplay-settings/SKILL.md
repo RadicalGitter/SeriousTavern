@@ -195,9 +195,13 @@ Use three core context layers:
 
 1. **Permanent narrator contract:** player agency, viewpoint, causal honesty,
    response behavior, and only setting truths required every turn.
-2. **Retrieved setting lore:** coherent people, places, institutions,
-   relationships, concepts, and facets activated by selective keys or real
-   gates.
+2. **Setting description (Character Description field):** the full cast of
+   characters, places, institutions, relationships, concepts, and world
+   facts, written as a cohesive reference document. This is the default
+   approach when context headroom is sufficient. Only use a separate
+   SillyTavern lorebook when retrieval is genuinely needed — for very
+   large casts, secrets that must stay out of context until discovered,
+   or conditional facets that activate on specific triggers.
 3. **Chat-owned state:** current scene, present cast, conditions, possessions,
    relationships, commitments, discoveries, introduced identities, and open
    threads.
@@ -213,6 +217,11 @@ Prefer deterministic state and retrieval over model bookkeeping. Do not require
 the roleplay model to emit hidden JSON or XML every turn. Any model-assisted
 state extraction must be a reviewable proposal bound to the exact transcript
 and state revision, with explicit user approval before persistence.
+
+When using the Character Description field for setting info (no separate
+lorebook), write characters, places, and world facts as a single cohesive
+document with clear section headings. This is simpler to author and maintain,
+and works well for settings that fit within the model's context window.
 
 ## 7. Write a local-model-friendly narrator contract
 
