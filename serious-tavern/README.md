@@ -52,6 +52,26 @@ prompt and reasoning settings. It makes no model calls until explicitly started.
 The batch Stop button stops the active generation and cancels remaining swipes.
 See [integration and offline verification](swipe-pregen.md).
 
+## ComfyUI API
+
+ComfyUI API is a built-in, default-enabled manual image workshop. Open
+**Extensions → ComfyUI API** to load a ComfyUI API workflow, map the generated
+image prompt and up to five custom fields to specific node inputs, and write
+the prompt writer's dedicated system instructions. Field aliases such as
+`{{resolution_x}}:{{resolution_y}}` use the same typed values as the workflow.
+
+The left sidebar shows this chat's generated images with previous/next controls,
+selected editable fields, and **Illustrate last reply**. Set the optional Qwen 2.1 node ID,
+then select or clear a gallery image for the next generation. An optional
+last-reply pre-prompt supplies `[Instructions]` and `[Scene]` sections with blank
+lines between them. The conversation shift
+and sidebar width are optional settings; narrow screens use an overlay.
+Generation occurs only on a button or `/comfy-image` command. Images are saved
+locally in SillyTavern and excluded from the normal model context by default.
+
+See [implementation, usage, and verification](comfyui-api.md). This built-in
+extension is separate from the optional third-party bootstrap packs below.
+
 ## Local-model development preset
 
 `SeriousTavern - Serenity llama.cpp` is a native Chat Completion preset for the

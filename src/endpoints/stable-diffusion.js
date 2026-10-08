@@ -1,3 +1,4 @@
+import { registerComfyBridge } from './comfyui-bridge.js';
 import fs from 'node:fs';
 import path from 'node:path';
 
@@ -383,6 +384,7 @@ router.post('/sd-next/upscalers', async (request, response) => {
 });
 
 const comfy = express.Router();
+registerComfyBridge(comfy);
 
 comfy.post('/ping', async (request, response) => {
     try {

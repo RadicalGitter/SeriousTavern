@@ -36,6 +36,16 @@ manual swipe generation and supports sequential batches. Read
 changing it. Keep generation explicit and preserve native prompts, reasoning,
 swipes and cancellation. Updates are reviewed with the fork, not auto-installed.
 
+ComfyUI API is a built-in, default-enabled manual image extension at
+`public/scripts/extensions/comfyui-api/`, with scoped server transport at
+`src/endpoints/comfyui-bridge.js`. Read
+[its implementation notes](serious-tavern/comfyui-api.md) before changing it.
+Its editable source lives in the sibling SillyTavern `Plugins/ComfyUI_API`
+project; refresh the generated copy with that project's deployment command.
+Do not edit a generated copy without reconciling the authored source. Model
+prompt instructions and custom field values are user settings; never replace
+them during deployment or insert authoring instructions into them.
+
 ## Keep authoring and play simple
 
 The owner's normal continuity workflow is to request a summary, edit it, and
